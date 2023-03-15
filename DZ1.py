@@ -2,9 +2,24 @@
 # 123 -> 6 (1 + 2 + 3)
 # 100 -> 1 (1 + 0 + 0)
 
-number = int(input("Введите трёхзначное число: "))
-digit1 = int(number/100)
-digit2 = int(number/10 % 10)
-digit3 = int(number % 10)
-summa = digit1+digit2 + digit3
-print(f"{number} -> {summa} ({digit1} + {digit2} + {digit3})")
+# number = int(input("Введите трёхзначное число: "))
+# digit1 = int(number/100)
+# digit2 = int(number/10 % 10)
+# digit3 = int(number % 10)
+# summa = digit1+digit2 + digit3
+# print(f"{number} -> {summa} ({digit1} + {digit2} + {digit3})")
+
+
+# Задача 4: Петя, Катя и Сережа делают из бумаги журавликов. Вместе они сделали S журавликов.
+# Сколько журавликов сделал каждый ребенок, если известно, что Петя и Сережа сделали одинаковое
+# количество журавликов, а Катя сделала в два раза больше журавликов, чем Петя и Сережа вместе?
+# 6 -> 1 4 1
+# 24 -> 4 16 4
+# 60 -> 10 40 10
+
+allChildren = int(input("Напишите, сколько журавликов сделали дети "))
+third = int(allChildren/3)
+Kate = int(allChildren-third)
+boy = int(third/2)
+print(f"{allChildren} -> {Kate}, {boy}, {boy}")
+
