@@ -4,6 +4,7 @@
 
 number = int(input("Введите трёхзначное число: "))
 digit1 = int(number/100)
-print(digit1)
-digit2 = int(number/10%10)
-print(digit2)
+digit2 = int(number/10 % 10)
+digit3 = int(number % 10)
+summa = digit1+digit2 + digit3
+print(f"{number} -> {summa} ({digit1} + {digit2} + {digit3})")
