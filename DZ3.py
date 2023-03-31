@@ -72,37 +72,25 @@ number_x = int(input("Введите число: "))
 
 res = 0
 res2 = 0
-none1 = ''
-none2 = ''
 #flag = True
 
 for i in number_list:
     if i > number_x:
         #flag = False
         res += i
-        
         break
 else:
     res = number_list[-1]
-    # none1 == 'Нет'
-    
    
 
 for el in number_list[-1::-1]:
    if el < number_x:
         # flag = False
         res2 += el
-        
         break
 else:
     res2 = number_list[0]
-    # none2 == 'Нет'
-    
-
-# if none2 == 'Нет':
-#     print (res)
-# elif none1 == 'Нет':
-#     print (res2)
+   
 if number_x - res2 > res - number_x:
     print (res)
 else:     
