@@ -72,31 +72,40 @@ number_x = int(input("Введите число: "))
 
 res = 0
 res2 = 0
+none1 = ''
+none2 = ''
 #flag = True
 
 for i in number_list:
     if i > number_x:
         #flag = False
         res += i
-        print(res)
+        
         break
 else:
-    print("None")
+    none1 == 'Нет'
+    
+   
 
 for el in number_list[-1::-1]:
    if el < number_x:
         # flag = False
         res2 += el
-        print(res2)
+        
         break
 else:
-    print("None")
+    none2 == 'Нет'
+    
 
-
-if number_x - res2 > res - number_x:
+if none2 == 'Нет':
     print (res)
-else:
+elif none1 == 'Нет':
     print (res2)
+elif number_x - res2 > res - number_x:
+    print (res)
+else:     
+    print (res2)
+
 
 
 # Задача 20: В настольной игре Скрабл (Scrabble) каждая буква имеет определенную
