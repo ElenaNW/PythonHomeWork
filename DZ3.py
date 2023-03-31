@@ -72,22 +72,19 @@ number_x = int(input("Введите число: "))
 
 res = 0
 res2 = 0
-#flag = True
+flag = True
 
 for i in number_list:
     if i > number_x:
-        #flag = False
+        flag = False
         res += i
-        break
 else:
     res = number_list[-1]
    
-
 for el in number_list[-1::-1]:
    if el < number_x:
-        # flag = False
+        flag = False
         res2 += el
-        break
 else:
     res2 = number_list[0]
    
