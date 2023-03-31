@@ -83,7 +83,8 @@ for i in number_list:
         
         break
 else:
-    none1 == 'Нет'
+    res = number_list[-1]
+    # none1 == 'Нет'
     
    
 
@@ -94,14 +95,15 @@ for el in number_list[-1::-1]:
         
         break
 else:
-    none2 == 'Нет'
+    res2 = number_list[0]
+    # none2 == 'Нет'
     
 
-if none2 == 'Нет':
-    print (res)
-elif none1 == 'Нет':
-    print (res2)
-elif number_x - res2 > res - number_x:
+# if none2 == 'Нет':
+#     print (res)
+# elif none1 == 'Нет':
+#     print (res2)
+if number_x - res2 > res - number_x:
     print (res)
 else:     
     print (res2)
